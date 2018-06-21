@@ -1,0 +1,152 @@
+.flyout-nav{
+  background: rgba(#261932,.8);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  opacity: 0;
+  transition-duration: .2s;
+  filter: blur(20px);
+  transition-property:all;
+  &.isActive{
+    opacity: 1;
+    filter: blur(0px);
+  }
+  backdrop-filter: blur(6px);
+  @include breakpoint(medium up){
+    width: 450px;
+  }
+}
+
+.flyout__container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: none;
+  visibility: hidden;
+  backdrop-filter: blur(8px);
+  transition-duration: .2s;
+  ransition-property:all;
+  background: rgba(black, .2);
+  &.isActive{
+    display: block;
+    visibility: visible;
+  }
+}
+
+.flyout-nav__main{
+  margin: 6rem 2rem 0 2rem;
+  @include breakpoint(medium up){
+    margin: 10rem 2rem 0 2rem;
+  }
+  li{
+    @extend .avenir-medium;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    &.isActive{
+      color: #F07643;
+      @extend .avenir-bold;
+      a{
+        color: #F07643;
+        &:hover{
+          color: #F07643;
+        }
+      }
+    }
+    &.small{
+      font-size: .8rem;
+    }
+    a{
+      color: white;
+      transition-property: color;
+      transition-duration: .2s;
+      &:hover{
+        color: #4FE0BF;
+      }
+    }
+  }
+  li + li {
+    margin-top: .6rem;
+  }
+  @include breakpoint(medium up){
+    li + li{
+      margin-top: 1.5rem;
+    }
+  }
+  li > ul{
+    margin: 0;
+    padding: 1rem 0;
+    @include breakpoint(medium up){
+      padding: 2rem 0 4rem 0;
+    }
+    li{
+      width: 100%;
+      a{ width: 100%; }
+    }
+    li + li {
+      margin-top: 1rem;
+    }
+    @include breakpoint(medium up){
+      li{
+        width: 50%;
+        float: left;
+        a{
+          width: auto;
+        }
+      }
+      li + li {
+        margin-top: 0;
+      }
+    }
+
+  }
+}
+
+.flyout-nav__x{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 96.3px;
+  width: 100px;
+  cursor: pointer;
+  .bar{
+    position: absolute;
+    width: 40px;
+    border: 1px solid white;
+    left:0;
+    right:0;
+    margin: auto;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    &:first-child{
+      margin-top: 0;
+      transform: rotate(45deg);
+    }
+    &:last-child{
+      margin-top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+  &:hover{
+    .bar{
+      &:first-child{
+        transform: rotate(180deg);
+        border-color: #4FE0BF;
+        margin-top: -4px;
+      }
+      &:last-child{
+        transform: rotate(180deg);
+        border-color: #4FE0BF;
+        margin-top: 5px;
+      }
+    }
+  }
+}

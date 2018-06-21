@@ -1,0 +1,23 @@
+// 1. Global Image URL
+// ---------
+$global-image-url: 'assets/img/';
+
+// 2. Global Font URL
+// ---------
+$global-fonts-url: 'assets/fonts/';
+
+// 3. Fonts
+// ---------
+$Roboto: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$RobotoCond: "RobotoCond";
+$RobotoSlab: RobotoSlab, serif;
+
+// 3. Colors
+// ---------
+$border-color: #d8dada;
+$grey: $border-color;
+
+// form
+$selected: #bbb;
+$focus: #719ece;
+$disabled: #d8dada;

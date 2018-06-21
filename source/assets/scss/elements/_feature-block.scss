@@ -1,0 +1,38 @@
+.feature-block{
+  padding-bottom: 2rem;
+  @include breakpoint(medium up){
+    padding-bottom: 0;
+  }
+}
+
+.block__heading{
+  @extend .avenir-bold;
+  color: #7E468A;
+}
+
+.block__text{
+  font-size: 1.2rem;
+  @extend .avenir-regular;
+  color: #4A4A4A;
+  line-height: 2.5;
+  & + .compact{
+    margin-top: 1rem;
+  }
+}
+
+.block__highlight{
+  color: #50E3C2;
+}
+
+.feature-block--industry{
+  background: url('/assets/img/hex.png') top left no-repeat;
+  padding: 6rem 0 8rem 0;
+  @include breakpoint(medium up){
+    min-height: 400px;
+    padding: 4rem 0 8rem 0;
+  }
+}
+
+.feature-block--benefits{
+
+}

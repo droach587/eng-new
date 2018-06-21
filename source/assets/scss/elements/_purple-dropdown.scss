@@ -1,0 +1,50 @@
+.purple-dropdown{
+  background:#642271;
+  margin: 1rem 0 0 0;
+  >li:first-child{
+    padding: 1.4rem 2rem 1.4rem 2rem;
+  }
+  li{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.6rem;
+    position: relative;
+    z-index: 99;
+    color: white;
+    @extend .avenir-bold;
+    a{ color: white; display: inline-block; width: 100%;}
+    a:hover{
+      color: #50E3C2;
+    }
+    ul{
+      width: 100%;
+      margin-left: 0;
+      position: absolute;
+      left:0;
+      top: 100%;
+      background: rgba(#642271,.9);
+      display: none;
+      visibility: hidden;
+      max-height: 200px;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      backdrop-filter: blur(6px);
+    }
+    ul li {
+      padding: .5rem 2rem;
+      text-align: left;
+    }
+    ul li + li {
+      border-top: 1px solid white;
+    }
+  }
+  &.isActive{
+    li ul {
+      display: block;
+      visibility: visible;
+    }
+    li:first-child{
+      color: #50E3C2;
+    }
+  }
+}

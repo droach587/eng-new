@@ -1,0 +1,12 @@
+.hidden{
+  display: none !important;
+  visibility: hidden;
+}
+
+.compact{
+  line-height: normal !important;
+}
+
+.strong{
+  @extend .avenir-bold;
+}

@@ -1,0 +1,33 @@
+// avenir-next-bold.eot
+// avenir-next-bold.svg
+// avenir-next-bold.ttf
+// avenir-next-bold.woff
+// avenir-next-italic.eot
+// avenir-next-italic.svg
+// avenir-next-italic.ttf
+// avenir-next-italic.woff
+// avenir-next-regular.eot
+// avenir-next-regular.svg
+// avenir-next-regular.ttf
+// avenir-next-regular.woff
+// avenir-next-thin.eot
+// avenir-next-thin.svg
+// avenir-next-thin.ttf
+// avenir-next-thin.woff
+
+
+@include font-face("Avenir Bold", '../fonts/avenir/avenir-next-bold', null, null, eot ttf woff);
+@include font-face("Avenir Regular", '../fonts/avenir/avenir-next-regular', null, null, eot ttf woff);
+@include font-face("Avenir Medium", '../fonts/avenir/avenir-next-medium', null, null, eot ttf woff);
+
+.avenir-bold{
+  font-family: "Avenir Bold", "Helvetica", sans-serif;
+}
+
+.avenir-regular{
+  font-family: "Avenir Regular", "Helvetica", sans-serif;
+}
+
+.avenir-medium{
+  font-family: "Avenir Medium", "Helvetica", sans-serif;
+}

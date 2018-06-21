@@ -1,0 +1,36 @@
+.section{
+  background: white;
+  padding: 6rem 0;
+  &--flush{
+    padding-bottom: 0px;
+  }
+  &--white{
+    background: white;
+  }
+  >.row + .row{
+    margin-top: 2rem;
+  }
+  @include breakpoint(medium up){
+    >.row + .row{
+      margin-top: 10rem;
+    }
+  }
+}
+
+.section--white{
+  & + &{
+    border-top: 1px solid lighten(#bbb,20%);
+  }
+}
+
+.section__heading{
+  @extend .avenir-bold;
+  letter-spacing: -1px;
+  color: #634B6B;
+}
+
+.section__subheading{
+  @extend .avenir-regular;
+  color: #666;
+  letter-spacing: -1px;
+}
