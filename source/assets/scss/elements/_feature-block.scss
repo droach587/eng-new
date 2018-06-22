@@ -14,7 +14,7 @@
   font-size: 1.2rem;
   @extend .avenir-regular;
   color: #4A4A4A;
-  line-height: 2.5;
+  line-height: 2;
   & + .compact{
     margin-top: 1rem;
   }
@@ -25,7 +25,7 @@
 }
 
 .feature-block--industry{
-  background: url('/assets/img/hex.png') top left no-repeat;
+  background: url('/assets/img/hex.png') center left no-repeat;
   padding: 6rem 0 8rem 0;
   @include breakpoint(medium up){
     min-height: 400px;

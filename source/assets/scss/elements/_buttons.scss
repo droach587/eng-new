@@ -1,5 +1,5 @@
 .round-white{
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background: rgba(white,.8);
   color: #4C2E66;
   text-align: center;
@@ -9,7 +9,6 @@
   transition-property: all;
   transition-duration: .3s;
   transition-delay: .1s;
-  border: 2px solid rgba(white, 0);
   @extend .avenir-bold;
   letter-spacing: -.3px;
   font-size: 1.1rem;
@@ -17,7 +16,6 @@
   &:hover{
     background: rgba(white, .2);
     color: white;
-    border: 2px solid white;
   }
 }
 
@@ -40,6 +38,12 @@
     background: #634B6B;
     color: white;
   }
+}
+
+.button--xl{
+  font-size: 1.6rem;
+  padding: 1.6rem 5rem;
+  border-radius: 50px;
 }
 
 .semi-round-transparent{

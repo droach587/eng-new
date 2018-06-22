@@ -1,11 +1,11 @@
 .main-nav{
-  background: rgba(darken(#383E4E,6%),.9);
+  background: rgba(#383E4E, .9);
   backdrop-filter: blur(2px);
   position: fixed;
   top:0;
   left:0;
   width: 100%;
-  z-index: 99;
+  z-index: 999;
   padding: 2rem 1rem;
 }
 
@@ -39,11 +39,11 @@
     }
   }
   &:hover{
-    background: lighten(#383E4E, 10%);
     transition-duration: .6s;
     transition-timing-function: ease-in;
     transition-property: all;
     .bar{
+      opacity: .8;
       &:first-child{
         margin-top: -14px;
       }

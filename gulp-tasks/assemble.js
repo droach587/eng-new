@@ -9,7 +9,7 @@ const gulpIf = require('gulp-if');
 
 
 //Change Layouts for Production Builds
-app.option('layout', gulpIf(isProduction, 'layout-production.hbs', 'layout.hbs'));
+app.option('layout', gulpIf(isProduction, 'layout.hbs', 'layout.hbs'));
 
 gulp.task('assemble', () => {
   app.build(['views'], function(err) {
