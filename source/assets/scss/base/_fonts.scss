@@ -21,11 +21,11 @@
 @include font-face("Avenir Medium", '../fonts/avenir/avenir-next-medium', null, null, eot ttf woff);
 
 .avenir-bold{
-  font-family: "Avenir Bold", "Helvetica", sans-serif;
+  font-family: "Avenir Bold", "Helvetica", sans-serif !important;
 }
 
 .avenir-regular{
-  font-family: "Avenir Regular", "Helvetica", sans-serif;
+  font-family: "Avenir Regular", "Helvetica", sans-serif !important;
 }
 
 .avenir-medium{

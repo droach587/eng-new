@@ -40,6 +40,27 @@
   }
 }
 
+.round-blue{
+  padding: 1rem 2rem;
+  background: rgba(#50e3e2,.6);
+  color: #3f174d;
+  text-align: center;
+  display: inline-block;
+  border-radius: 28px;
+  margin-top: 1rem;
+  transition-property: all;
+  transition-duration: .3s;
+  transition-delay: .1s;
+  @extend .avenir-bold;
+  letter-spacing: -.3px;
+  font-size: 1.1rem;
+  text-align: center;
+  &:hover{
+    background: #634B6B;
+    color: white;
+  }
+}
+
 .button--xl{
   font-size: 1.6rem;
   padding: 1.6rem 5rem;

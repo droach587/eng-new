@@ -60,6 +60,8 @@ gulp.task('webpack', () => {
           alias: {
             jquery: path.resolve('node_modules', 'jquery/dist/jquery.js'),
             'foundation': path.resolve('node_modules', 'foundation-sites/dist/js/foundation.js'),
+            'fancybox' : path.resolve('source/assets/js/vendor', 'jquery.fancybox.js'),
+            'flex' : path.resolve('source/assets/js/vendor', 'jquery.flexslider-min.js'),
           }
         }
       }, webpack)

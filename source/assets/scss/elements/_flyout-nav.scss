@@ -1,5 +1,5 @@
 .flyout-nav{
-  background: lighten(rgba(#261932,.88), 10%);
+  background: lighten(rgba(#261932,.95), 10%);
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -30,7 +30,7 @@
   backdrop-filter: blur(8px);
   transition-duration: .2s;
   ransition-property:all;
-  background: rgba(black, .6);
+  background: rgba(black, .2);
   &.isActive{
     display: block;
     visibility: visible;

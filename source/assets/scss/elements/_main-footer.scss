@@ -1,5 +1,5 @@
 .main-footer{
-  background: #383E4E;
+  background: #261932;
   color: white;
   > .row:not(.main-footer__copy){
     >.columns{
@@ -43,8 +43,8 @@
 }
 
 .main-footer__copy{
-  background: #292F40;
-  border-top:1px solid lighten(#292F40,20%);
+  background: darken(#261932, 10%);
+  border-top:1px solid lighten(#292F40,5%);
   margin-top: 2rem;
   padding: 4rem 1rem;
   p{ margin: 0; @extend .avenir-regular; }

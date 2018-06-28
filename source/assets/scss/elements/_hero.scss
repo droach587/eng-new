@@ -8,11 +8,27 @@
     height: 100%;
   }
   color: white;
+  &--short{
+    height: 400px;
+  }
 }
 
 .hero__heading{
   @extend .avenir-bold;
   letter-spacing: -.5px;
+}
+
+.hero__cta{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  @extend .avenir-regular;
+  &:hover{
+    color: white;
+  }
 }
 
 .hero__headlines{
@@ -25,11 +41,17 @@
 }
 
 .hero__tagline{
-  margin-top: 4rem;
+  transform: translateY(120px);
   display: inline-block;
-  background: #4A1E4C;
+  background: rgba(#4A1E4C, .5);
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @extend .avenir-medium;
+  img{
+    padding-right: 10px;
+  }
 }
 
 .hero__scroll-down{
@@ -71,7 +93,6 @@
     position: absolute;
     width: 100%;
     height: 100px;
-    background: rgba(white, .5);
     border-radius: 100%;
     left:0;
     top:0;
