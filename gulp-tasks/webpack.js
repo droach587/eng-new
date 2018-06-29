@@ -62,6 +62,7 @@ gulp.task('webpack', () => {
             'foundation': path.resolve('node_modules', 'foundation-sites/dist/js/foundation.js'),
             'fancybox' : path.resolve('source/assets/js/vendor', 'jquery.fancybox.js'),
             'flex' : path.resolve('source/assets/js/vendor', 'jquery.flexslider-min.js'),
+            'waypoints' : path.resolve('node_modules', 'waypoints/lib/noframework.waypoints.js'),
           }
         }
       }, webpack)

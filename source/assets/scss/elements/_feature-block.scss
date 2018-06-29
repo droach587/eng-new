@@ -3,6 +3,11 @@
   @include breakpoint(medium up){
     padding-bottom: 0;
   }
+  &--tight{
+    .block__text{
+      line-height: normal;
+    }
+  }
 }
 
 .block__heading{

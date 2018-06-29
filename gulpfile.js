@@ -17,9 +17,9 @@ const isProduction = gulpVars.vars();
 
 const sequence = callback => {
   if( isProduction ){
-    runSequence('clean:build', 'assemble', 'images', 'sass', 'webpack', 'fonts', callback);
+    runSequence('clean:build', 'assemble', 'images', 'sass', 'webpack', 'fonts', 'copy:data', callback);
   } else {
-    runSequence('clean:build', 'assemble', 'images', 'sass', 'webpack', 'fonts', 'sync', 'watch', callback);
+    runSequence('clean:build', 'assemble', 'images', 'sass', 'webpack', 'fonts', 'copy:data', 'sync', 'watch', callback);
   }
 };
 

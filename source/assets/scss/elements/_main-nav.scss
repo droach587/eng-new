@@ -1,5 +1,5 @@
 .main-nav{
-  background: rgba(#261932, .6);
+  background: transparent;
   backdrop-filter: blur(2px);
   position: fixed;
   top:0;
@@ -9,7 +9,8 @@
   padding: 2rem 1rem;
   transition-duration: .2s;
   transition-property: all;
-  &:hover{
+  &:hover,
+  &.isActive{
     background: rgba(#261932, .9);
   }
 }
@@ -22,7 +23,6 @@
   position: absolute;
   top:0;
   left:0;
-  border-right: 1px solid rgba(white,.1);
   height: 100%;
   width: 100px;
   cursor: pointer;
@@ -66,6 +66,7 @@
   color: white;
   width: 100px;
   position: relative;
+  opacity: .9;
   li{
     color: white;
     display: inline-block;

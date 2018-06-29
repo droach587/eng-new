@@ -10,6 +10,9 @@
   color: white;
   &--short{
     height: 400px;
+    .hero__headlines{
+      margin-top: 3rem;
+    }
   }
 }
 

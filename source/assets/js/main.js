@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'fancybox';
 import 'flex';
+import 'waypoints';
 
 $(document).ready(() => {
 
@@ -15,6 +16,35 @@ $(document).ready(() => {
     e.preventDefault();
 
   });
+
+
+  $('.wp-hide').each(function(){
+    const waypoint = new Waypoint({
+      element: $(this)[0],
+      handler(direction) {
+        if(direction == 'down'){
+          if(!$(this.element).hasClass('isActive')){
+            $(this.element).addClass('isActive');
+          }
+        }
+      },
+      offset: '80%'
+    });
+  });
+
+  $('.nest > a').on('click', function(e){
+    $(this).parent().toggleClass('isActive');
+    $('html, body').stop();
+    e.preventDefault();
+  });
+
+  $(window).scroll(function(){
+    if($(document).scrollTop() > 150){
+      $('.main-nav').addClass('isActive');
+    }else{
+      $('.main-nav').removeClass('isActive');
+    }
+  })
 
   function contactCondition() {
 

@@ -1,6 +1,12 @@
 .section{
   background: white;
-  padding: 6rem 0;
+  padding: 3rem 0;
+  @include breakpoint(medium up){
+    padding: 4rem 0;
+  }
+  @include breakpoint(large up){
+    padding: 8rem 0;
+  }
   &--flush{
     padding-bottom: 0px;
   }

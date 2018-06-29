@@ -1,0 +1,164 @@
+.inner-container{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include breakpoint(medium up){
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  @include breakpoint(large up){
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.market-graph li a{
+  &:hover{
+    background: darken($purple,20%);
+    color: white;
+    .market-graph-title{
+      color: white;
+      margin-top: 20px;
+    }
+  }
+}
+
+.hero__tagline{
+  .strong{
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+.strong{
+  @extend .avenir-bold;
+  color: darken($purple,20%);
+}
+
+.facilities-graph li a{
+  border-width: 1px;
+  border-radius: 4px;
+  @extend .avenir-regular;
+}
+
+.facilities-graph li p{
+  font-size: .8rem;
+  margin-top: 1rem;
+}
+
+.facilities-graph li a:hover .icon i{
+  color: lighten($purple,20%);;
+}
+
+.fc{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.facilities-graph li .icon{
+  background: darken($purple,20%);
+  color: white;
+}
+
+.hr{
+  width: 40%;
+  max-width: 1200px;
+  border-top: 1px solid #bbb;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  @include breakpoint(large up){
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+  }
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  &--tight{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.success-stories .col .h2{
+  @extend .avenir-regular;
+  color: darken($purple,20%);
+}
+
+.success-stories .col p{
+  color: #777;
+  padding-bottom: 2rem;
+}
+
+.contact-section{
+  background-attachment: fixed;
+}
+
+.hero--break{
+  background: url(/assets/img/eng-hero-short.jpg) center center fixed no-repeat;
+  background-size: cover;
+  padding: 6rem 0;
+}
+
+.break-hero__heading{
+  color: white;
+  @extend .avenir-bold;
+}
+
+.m-bg{
+  background: white url(/assets/img/mole-bg.jpg) bottom left no-repeat fixed !important;
+  background-size: cover !important;
+}
+
+.success-stories .success-heading{
+  text-transform: capitalize;
+  color: darken($purple,20%);
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  @extend .avenir-bold;
+}
+
+.white{
+  color: white;
+}
+
+.success-stories .success-article .btn{
+  background: darken($purple,20%);
+  border: none;
+  @extend .avenir-bold;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.success-stories .success-article{
+  padding-bottom: 0;
+  img{
+    opacity: .7;
+  }
+  &:hover{
+    background: darken($purple,20%);
+    .h2, p{
+      color: white;
+    }
+    img{
+      opacity: .4;
+    }
+  }
+}
+
+
+.wp-hide{
+  opacity:0;
+  transform: translateY(20px);
+  transition-duration: .6s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  filter: blur(5px);
+  &.isActive{
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0px);
+  }
+}
